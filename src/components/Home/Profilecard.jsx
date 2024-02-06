@@ -1,9 +1,9 @@
 export default function Profilecard() {
   return (
-    <div className="mt-[20px] h-content bg-gradient-to-tl from-black  to-brand-purple xsm:rounded-lg md:rounded-xl flex flex-col">
+    <div className="md:mt-[20px] h-fit bg-gradient-to-tl from-black  to-brand-purple xsm:rounded-lg md:rounded-xl flex flex-col items-center">
       <img
         src="../../src/assets/abhisek.png"
-        className=" xsm:w-full md:w-[300px] md:h-[240px] mt-[60px]"
+        className=" xsm:w-[150px] md:w-[300px] md:h-[240px] xsm:mt-[20px] md:mt-[60px]"
         alt=""
       />
       <div className="flex flex-col xsm:p-[20px] md:p-[40px] gap-[10px] bg-brand-bg-light box-content xsm:rounded-b-lg md:rounded-b-xl">
