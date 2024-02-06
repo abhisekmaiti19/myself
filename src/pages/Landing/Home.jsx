@@ -13,37 +13,43 @@ function Home() {
       {/* // left section  */}
       <div className=" w-1/2 max-md:w-full md:min-h-screen relative flex flex-col items-center gap-[20px] overflow-y-scroll overflow-x-hidden magic">
         {/* {intro section} */}
-        {
-          /* { Navbar has to be seen while its below 768 px / Tab  }*/
-          window.innerWidth > 768 ? "" : <Navbar />
-        }
-        {window.innerWidth < 768 ? (
-          <div className="w-full h-fit flex justify-evenly flex-wrap gap-y-[10px] items-center">
-            <Welcome />
 
-            <Profilecard />
-          </div>
-        ) : (
+        <div className="w-full md:hidden">
+          <Navbar />
+        </div>
+
+        <div className="w-full h-fit flex justify-evenly flex-wrap gap-y-[10px] items-center md:hidden">
           <Welcome />
-        )}
+
+          <Profilecard />
+        </div>
+        <div className="max-md:hidden md:visible md:w-full">
+          <Welcome />
+        </div>
 
         {/* project/SuperWrok part  */}
         <Superworks />
         {/* Feedback part  */}
-        <Feedbacks />
+        <div className="md:visible max-md:hidden w-full">
+          <Feedbacks />
+        </div>
       </div>
 
       {/* //right section */}
       <div className="max-md:w-full w-1/2 min-h-screen relative flex flex-col items-center overflow-y-scroll overflow-x-hidden magic">
         {/* for navbar  */}
-        <Navbar />
+        <div className="md:visible max-md:hidden w-full">
+          <Navbar />
+        </div>
 
         <div className="h-full bg-red-5 xsm:w-full md:w-[680px] flex max-md:flex-col md:justify-between overflow-hidden">
           {/* only for profile and awards  */}
           <div className=" xsm:w-full md:w-[300px] h-full overflow-y-scroll  magic">
             <div className="flex-col flex gap-[20px]">
               {/* this is profile card image and designation  || mapplying margin top 20*/}
-              <Profilecard />
+              <div className="md:visible max-md:hidden w-fit">
+                <Profilecard />
+              </div>
               {/* awards section  */}
               <Sectioncard
                 type={"award"}
@@ -95,6 +101,10 @@ function Home() {
             </div>
           </div>
         </div>
+        <div className="md:hidden max-md:visible w-full">
+          <Feedbacks />
+        </div>
+        <div></div>
       </div>
     </div>
   );

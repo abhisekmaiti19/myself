@@ -3,7 +3,7 @@ import remote from "../../../assets/console.png";
 
 export default function Superworks() {
   return (
-    <div className="relative md:w-[680px] xsm:w-full flex flex-col xsm:gap-[20px] md:gap-[40px] bg-brand-bg-light xsm:rounded-lg md:rounded-3xl md:p-[40px] xsm:p-[20px]">
+    <div className="relative xxl:w-[680px] md:w-full xsm:w-full flex flex-col xsm:gap-[20px] md:gap-[40px] bg-brand-bg-light xsm:rounded-lg md:rounded-3xl md:p-[40px] xsm:p-[20px]">
       <h1 className="flex gap-[10px] items-center font-bold">
         <img src={remote} className=" " alt="" />
         My super works

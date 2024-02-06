@@ -2,8 +2,8 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import App from "./App.jsx";
 import "./index.css";
-// import Landing from "./pages/Landing.jsx";
-import Home from "./pages/Landing/Home.jsx";
+import Landing from "./pages/Landing.jsx";
+// import Home from "./pages/Landing/Home.jsx";
 import {
   Route,
   createBrowserRouter,
@@ -14,7 +14,7 @@ import {
 const routes = createBrowserRouter(
   createRoutesFromElements(
     <Route path="" element={<App />}>
-      <Route path="" element={<Home />}></Route>
+      <Route path="" element={<Landing />}></Route>
     </Route>
   )
 );
