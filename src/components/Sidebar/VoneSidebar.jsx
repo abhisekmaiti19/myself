@@ -12,7 +12,7 @@ export default function VoneSidebar({ isClicked }) {
     <div className="relative w-full h-full flex flex-col justify-between px-[1rem] text-white customscroll">
       <div className={`overflow-y-auto flex flex-col gap-[3rem] customscroll`}>
         <div
-          className={`text-[3rem] text-slate-300 flex justify-between  ${
+          className={`text-[3rem] text-slate-300 flex justify-between max-md:pt-4  ${
             clicked ? ` md:justify-center` : `justify-between`
           }`}
         >
@@ -89,7 +89,7 @@ export default function VoneSidebar({ isClicked }) {
       </div>
 
       <button
-        className={`relative flex items-center justify-center gap-[1rem] bottom-0 w-full max-xl:text-[1.2rem] xl:text-[1.4rem] font-semibold text-start p-[1rem] rounded-xl bg-blue-800 overflow-hidden ${
+        className={`relative max-md:bottom-6 flex items-center justify-center gap-[1rem] bottom-0 w-full max-xl:text-[1.2rem] xl:text-[1.4rem] font-semibold text-start p-[1rem] rounded-xl bg-blue-800 overflow-hidden ${
           isClicked ? `w-full flex-col-reverse justify-center text-center` : ``
         } whitespace-nowrap transition-all duration-500 ease-in-out`}
       >
