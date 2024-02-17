@@ -12,12 +12,13 @@ export default {
       },
       screens: {
         // for safe side i increase pixel by +1
+        xxxl: "1920px",
         xxl: "1496px",
-        xl: "1201px",
-        lg: "993px",
-        md: "769px",
-        sm: "577px",
-        xsm: "100px",
+        xl: "1200px",
+        lg: "992px",
+        md: "768px",
+        sm: "576px",
+        xs: "100px",
       },
     },
   },

@@ -1,13 +1,35 @@
 import { Outlet } from "react-router";
-import AnimatedCursor from "react-animated-cursor";
+import VoneSidebar from "./components/Sidebar/VoneSidebar";
+// import AnimatedCursor from "react-animated-cursor";
+import toogleContext from "./context/Toogle/toogleContext";
+import { useContext } from "react";
 export default function App() {
+  const { clicked } = useContext(toogleContext);
   return (
-    <div className="w-screen h-screen bg-brand-bg flex justify-center items-center overflow-hidden">
-      {/* here i maintain screen sizes for now its 100vw and 100vh  */}
-      <div className="w-full max-w-[1496px] h-screen overflow-y-scroll">
-        <Outlet />
+    //  here i maintain screen sizes for now its 100vw and 100vh
+    <div className="w-screen h-screen relative bg-brand-bg flex justify-center items-center md:overflow-hidden max-md:overflow-y-auto">
+      {/* mentioned and controll the maximum screensize width taken  */}
+      <div
+        className={`w-full max-w-[1920px] h-screen flex md:flex-row max-md:flex-col relative md:p-[5rem] max-md:px-5 max-md:overflow-y-auto md:overflow-hidden ${
+          clicked ? `gap-1` : `max-xl:gap-0 xl:gap-[2rem]`
+        }`}
+      >
+        {/* have two part side navbar/topbar and the content screen */}
+        <div
+          className={`relative md:min-h-full max-md:min-h-[40%] ${
+            clicked ? `md:w-[12rem]` : `xl:w-[15%] max-xl:w-[12rem]`
+          } md:h-full max-md:w-full max-md:h-[10%] max-md:mt-2 overflow-y-auto customscroll transition-all duration-300 ease-in-out`}
+        >
+          <VoneSidebar isClicked={clicked} />
+          {/* //toogle button */}
+        </div>
+        {/* holding oulet with nice curve  */}
+        <div className="w-full h-full rounded-3xl bg-brand-bg-light overflow-y-scroll customscroll ">
+          <Outlet />
+        </div>
       </div>
-      {window.innerWidth > 768 ? (
+      {/* please neglate  */}
+      {/* <div className="md:visible max-md:hidden">
         <AnimatedCursor
           innerSize={8}
           outerSize={35}
@@ -31,7 +53,7 @@ export default function App() {
             "img",
           ]}
           innerStyle={{
-            backgroundColor: "#6D6E71",
+            backgroundColor: "#fff",
           }}
           outerStyle={{
             border: "3px solid #fff",
@@ -39,9 +61,7 @@ export default function App() {
             mixBlendMode: "exclusion",
           }}
         />
-      ) : (
-        ""
-      )}
+      </div> */}
     </div>
   );
 }
