@@ -7,13 +7,14 @@ import ToogleContextProvider from "./context/Toogle/ToogleContextProvider.jsx";
 // import Home from "./pages/Landing/Home.jsx";
 import {
   Route,
-  createBrowserRouter,
+  // createBrowserRouter,
   createRoutesFromElements,
+  createHashRouter,
   RouterProvider,
 } from "react-router-dom";
 import Home from "./pages/Home.jsx";
 
-const routes = createBrowserRouter(
+const routes = createHashRouter(
   createRoutesFromElements(
     <Route path="" element={<App />}>
       <Route path="" element={<Home />}></Route>
