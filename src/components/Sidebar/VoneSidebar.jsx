@@ -43,7 +43,11 @@ export default function VoneSidebar({ isClicked }) {
             <ChevronRightIcon width="2rem" height="2rem" />
           </div>
         </div>
-        <div className="flex md:flex-col max-md:flex-row gap-[3rem]">
+        <div
+          className={`flex md:flex-col max-md:flex-row gap-[3rem] ${
+            clicked ? `max-md:visible` : `max-md:hidden`
+          }`}
+        >
           {/* What i am */}
           <div className={`w-full flex flex-col gap-[2rem]`}>
             <h1
@@ -90,7 +94,9 @@ export default function VoneSidebar({ isClicked }) {
 
       <button
         className={`relative max-md:bottom-6 flex items-center justify-center gap-[1rem] bottom-0 w-full max-xl:text-[1.2rem] xl:text-[1.4rem] font-semibold text-start p-[1rem] rounded-xl bg-blue-800 overflow-hidden ${
-          isClicked ? `w-full flex-col-reverse justify-center text-center` : ``
+          isClicked
+            ? `w-full flex-col-reverse justify-center text-center max-md:visible`
+            : `max-md:hidden`
         } whitespace-nowrap transition-all duration-500 ease-in-out`}
       >
         Connect Me

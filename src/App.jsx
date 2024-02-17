@@ -15,9 +15,12 @@ export default function App() {
         }`}
       >
         {/* have two part side navbar/topbar and the content screen */}
+        {/* max-md:min-h-[40%] */}
         <div
-          className={`relative md:min-h-full max-md:min-h-[40%] ${
-            clicked ? `md:w-[12rem]` : `xl:w-[15%] max-xl:w-[12rem]`
+          className={`relative md:min-h-full  ${
+            clicked
+              ? `md:w-[12rem]  max-md:min-h-[40%]`
+              : `xl:w-[15%] max-xl:w-[12rem] max-md:max-h-fit`
           } md:h-full max-md:w-full max-md:h-[10%] max-md:mt-2 overflow-y-auto customscroll transition-all duration-300 ease-in-out`}
         >
           <VoneSidebar isClicked={clicked} />
