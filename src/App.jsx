@@ -17,7 +17,7 @@ export default function App() {
         {/* have two part side navbar/topbar and the content screen */}
         {/* max-md:min-h-[40%] */}
         <div
-          className={`relative md:min-h-full  ${
+          className={`relative md:min-h-full ${
             clicked
               ? `md:w-[12rem]  max-md:min-h-[40%]`
               : `xl:w-[15%] max-xl:w-[12rem] max-md:max-h-fit`
@@ -27,7 +27,7 @@ export default function App() {
           {/* //toogle button */}
         </div>
         {/* holding oulet with nice curve  */}
-        <div className="w-full h-full rounded-3xl bg-brand-bg-light overflow-y-scroll customscroll ">
+        <div className="relative w-full h-full rounded-3xl bg-brand-bg-light overflow-hidden">
           <Outlet />
         </div>
       </div>

@@ -40,7 +40,7 @@ export default function VoneSidebar({ isClicked }) {
               setClicked(!clicked);
             }}
           >
-            <ChevronRightIcon width="2rem" height="2rem" />
+            <ChevronRightIcon width="2rem" height="2rem" color="#000" />
           </div>
         </div>
         <div

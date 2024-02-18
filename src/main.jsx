@@ -13,11 +13,12 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import Home from "./pages/Home.jsx";
+import Resume from "./pages/Resume.jsx";
 
 const routes = createBrowserRouter(
   createRoutesFromElements(
     <Route path="" element={<App />}>
-      <Route path="" element={<Home />}></Route>
+      <Route path="" element={<Resume />}></Route>
       <Route path="skills" element={<Home />}></Route>
       <Route path="projects" element={<Working />}></Route>
       <Route path="feedbacks" element={<Home />}></Route>
