@@ -93,7 +93,7 @@ export default function VoneSidebar({ isClicked }) {
       </div>
 
       <button
-        className={`relative max-md:bottom-6 flex items-center justify-center gap-[1rem] bottom-0 w-full max-xl:text-[1.2rem] xl:text-[1.4rem] font-semibold text-start p-[1rem] rounded-xl bg-blue-800 overflow-hidden ${
+        className={`relative max-md:bottom-3 flex items-center justify-center gap-[1rem] bottom-0 w-full max-xl:text-[1.2rem] xl:text-[1.4rem] font-semibold text-start p-[1rem] rounded-xl bg-blue-800 overflow-hidden ${
           isClicked
             ? `w-full flex-col-reverse justify-center text-center max-md:visible`
             : `max-md:hidden`
