@@ -35,3 +35,22 @@ html {
 .customscroll::-webkit-scrollbar {
   display: none;
 }
+
+.slideanime {
+  animation: sliding;
+  animation-iteration-count: infinite;
+  animation-duration: 30s;
+  animation-timing-function: linear;
+}
+.slidecover:hover .slideanime {
+  animation-play-state: paused;
+}
+
+@keyframes sliding {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}

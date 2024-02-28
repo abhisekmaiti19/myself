@@ -17,3 +17,15 @@ Medium------------------md--------------≥768px
 Large-------------------lg--------------≥992px
 Extra large-------------xl--------------≥1200px
 Extra extra large-------xxl-------------≥1496px/≥1400px (by_default)
+
+Font size
+XL---[--3rem--]
+lg---[--2rem--]
+md---[--1.5rem--]
+md---[--1.4rem--]
+
+Padding and spaces / margin
+
+xl --> 12rem
+lg --> 8rem
+sm --> 4rem
