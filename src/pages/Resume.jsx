@@ -223,11 +223,12 @@ export default function Resume() {
               {/* {ALL DEATAILS - Institute - marks - address and images} */}
               <div className="w-full flex flex-col gap-8 text-[1.4rem] max-sm:text-[1.2rem] text-white mt-4">
                 {/* Deatails without images  */}
-                <div className="flex flex-col gap-[4rem] bg-brand-bg/50 border-black border-[1px] p-[4rem] rounded-lg">
+                <div className="flex flex-col gap-[4rem] bg-brand-bg/50 border-black border-[1px] max-sm:p-[3rem] p-[4rem] rounded-lg">
                   {/* institute name and address  */}
                   <div className="flex justify-between items-center flex-wrap gap-y-[2rem] gap-x-10  leading-none">
                     <h1 className="text-[2rem] max-sm:text-[1.5rem]">
                       Future Institute of Engineering and Management
+                      {/* Fullstack */}
                     </h1>
                     <h1 className="text-white/50">Kolkata, West Bengal</h1>
                   </div>

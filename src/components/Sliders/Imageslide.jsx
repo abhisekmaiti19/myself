@@ -45,10 +45,10 @@ export default function Imageslide() {
           })}
         </div>
       </div>
-      <span className="absolute h-full w-[25rem] md:w-[5rem] max-sm:w-[5rem] -left-1 top-0 bg-gradient-to-r from-brand-bg-light  to-transparent"></span>
-      <span className="absolute h-full w-[25rem] md:w-[5rem] max-sm:hidden -right-1 top-0 bg-gradient-to-l from-brand-bg-light to-transparent"></span>
-      <span className="absolute h-full w-[25rem] md:w-[5rem] max-sm:hidden -left-1 top-0 bg-gradient-to-r from-brand-bg-light  to-transparent"></span>
-      <span className="absolute h-full w-[25rem] md:w-[5rem] max-sm:w-[5rem] -right-1 top-0 bg-gradient-to-l from-brand-bg-light to-transparent"></span>
+      <span className="absolute h-full w-[25%] -left-1 top-0 bg-gradient-to-r from-brand-bg-light  to-transparent"></span>
+      <span className="absolute h-full w-[25%] -right-1 top-0 bg-gradient-to-l from-brand-bg-light to-transparent"></span>
+      <span className="absolute h-full w-[25%] -left-1 top-0 bg-gradient-to-r from-brand-bg-light  to-transparent"></span>
+      <span className="absolute h-full w-[25%] -right-1 top-0 bg-gradient-to-l from-brand-bg-light to-transparent"></span>
     </div>
   );
 }
