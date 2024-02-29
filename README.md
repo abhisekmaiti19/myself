@@ -24,8 +24,9 @@ lg---[--2rem--]
 md---[--1.5rem--]
 md---[--1.4rem--]
 
-Padding and spaces / margin
+Padding and spaces / margin /gap
 
 xl --> 12rem
 lg --> 8rem
 sm --> 4rem
+xsm --> 2rem

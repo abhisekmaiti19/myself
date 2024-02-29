@@ -7,7 +7,7 @@ export default function Projectcard({ name, img, desc }) {
   return (
     <div
       key={id}
-      className=" max-sm:w-full w-[30rem] h-[30rem] max-[375px]:w-full max-[375px]:h-fit bg-brand-bg border-[1px] border-black rounded-xl relative flex flex-col gap-[2rem] overflow-hidden  transition-all duration-300 ease-in-out"
+      className="w-[30rem] max-[375px]:w-full h-[30rem] max-[375px]:h-fit bg-brand-bg border-[1px] border-black rounded-xl relative flex flex-col gap-[2rem] overflow-hidden  transition-all duration-300 ease-in-out"
     >
       {/* only for image  */}
       <div

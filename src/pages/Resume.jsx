@@ -6,6 +6,7 @@ import {
 import { CompassOutlined, CodeOutlined } from "@ant-design/icons";
 import Descbutton from "../components/Others/Descbutton";
 import Skillbutton from "../components/Others/Skillbutton";
+import Imageslide from "../components/Sliders/Imageslide";
 import { nanoid } from "nanoid";
 import Expcard from "../components/Cards/Expcard";
 import fynd from "../assets/fynd.svg";
@@ -220,18 +221,19 @@ export default function Resume() {
                 </div>
               </div>
               {/* {ALL DEATAILS - Institute - marks - address and images} */}
-              <div className="w-full flex flex-col gap-8 text-[1.4rem] text-white mt-4">
-                <div className="flex flex-col gap-4 max-sm:gap-8">
+              <div className="w-full flex flex-col gap-8 text-[1.4rem] max-sm:text-[1.2rem] text-white mt-4">
+                {/* Deatails without images  */}
+                <div className="flex flex-col gap-[4rem] bg-brand-bg/50 border-black border-[1px] p-[4rem] rounded-lg">
                   {/* institute name and address  */}
-                  <div className="flex justify-between items-center flex-wrap gap-y-2 gap-x-10  leading-none">
-                    <h1 className="text-[2rem]">
+                  <div className="flex justify-between items-center flex-wrap gap-y-[2rem] gap-x-10  leading-none">
+                    <h1 className="text-[2rem] max-sm:text-[1.5rem]">
                       Future Institute of Engineering and Management
                     </h1>
                     <h1 className="text-white/50">Kolkata, West Bengal</h1>
                   </div>
                   {/* degree - marks and duration  */}
-                  <div className="flex justify-between items-center flex-wrap gap-y-2 gap-x-10 leading-none text-white/50">
-                    <h1 className="flex items-center gap-2 flex-wrap">
+                  <div className="flex justify-between items-center flex-wrap gap-y-[2rem] gap-x-10 leading-none text-white/50">
+                    <h1 className="flex items-center gap-[2rem] flex-wrap">
                       Bachelor of Technology in Computer Science and Engineering{" "}
                       <span className="bg-black/50 px-2 py-1 rounded text-white/50">
                         GPA - 9.06
@@ -241,36 +243,7 @@ export default function Resume() {
                   </div>
                 </div>
                 {/* image showcase slider  */}
-                <div className="relative w-full mt-4">
-                  <div className=" flex gap-8 overflow-hidden slidecover">
-                    <div className="flex gap-8 slideanime">
-                      {mydetails.map((item) => {
-                        let id = nanoid();
-                        return (
-                          <div
-                            key={id}
-                            className="w-[25rem] h-[25rem] bg-slate-300 rounded-xl"
-                          ></div>
-                        );
-                      })}
-                    </div>
-                    <div className="flex gap-8 slideanime">
-                      {mydetails.map((item) => {
-                        let id = nanoid();
-                        return (
-                          <div
-                            key={id}
-                            className="w-[25rem] h-[25rem] bg-slate-300 rounded-xl"
-                          ></div>
-                        );
-                      })}
-                    </div>
-                  </div>
-                  <span className="absolute h-full w-[25rem] -left-1 top-0 bg-gradient-to-r from-brand-bg-light  to-transparent"></span>
-                  <span className="absolute h-full w-[25rem] -right-1 top-0 bg-gradient-to-l from-brand-bg-light to-transparent"></span>
-                  <span className="absolute h-full w-[25rem] -left-1 top-0 bg-gradient-to-r from-brand-bg-light  to-transparent"></span>
-                  <span className="absolute h-full w-[25rem] -right-1 top-0 bg-gradient-to-l from-brand-bg-light to-transparent"></span>
-                </div>
+                <Imageslide />
               </div>
             </div>
           </div>
