@@ -14,7 +14,9 @@ import ltim from "../assets/ltim.svg";
 import prj from "../assets/prj1.png";
 import prj2 from "../assets/prj2.png";
 import prj3 from "../assets/prj3.png";
+import me from "../assets/me.png";
 import Projectcard from "../components/Cards/Projectcard";
+import Educard from "../components/Cards/Educard";
 export default function Resume() {
   let mydetails = [
     {
@@ -99,31 +101,40 @@ export default function Resume() {
           {/* main contain area where w-fit means maximum width all content take is equall to the highest width that my content have  */}
           <div className="max-xxl:w-full xxl:w-[99.2rem] flex flex-col gap-[8rem] items-center">
             {/* Resume title part Name and details of contatct */}
-            <div className="w-full flex flex-col items-start mt-8  gap-8">
-              {/* name and looking for work */}
-              <div className="text-[3rem] text-white flex flex-col leading-none">
-                <span className="text-[2rem] opacity-40">Hello! Myself</span>
-                <h1 className="flex flex-wrap gap-6 items-center">
-                  Abhisek Maiti
-                  {/* -gradient-to-l from-yellow-700 to-yellow-600 */}
-                  <span className="relative overflow-hidden text-[1.2rem] text-black font-bold w-fit bg-gradient-to-l from-yellow-700 to-yellow-600 px-4 py-2 rounded-md">
-                    Looking for React Dev Role
-                  </span>
-                </h1>
+            <div className="w-full flex sm:items-end sm:flex-row max-sm:flex-col max-sm:items-start justify-between gap-[4rem]">
+              {/* your image  */}
+              <div className="min-w-[15rem] h-[15rem] bg-white/10 rounded-lg overflow-hidden flex justify-center items-center relative">
+                <div className="w-full h-full absolute top-0 right-0">
+                  <div className="w-full h-full bottom-0 absolute bg-gradient-to-t from-brand-bg/80 to-transparent"></div>
+                </div>
+                <img src={me} className="w-full h-full" alt="" />
               </div>
-              {/* email phone and others  */}
-              <div className="flex justify-start gap-2 flex-wrap ">
-                {mydetails.map((item) => {
-                  let id = nanoid();
-                  return (
-                    <Descbutton
-                      key={id}
-                      text={item.text}
-                      link="mylink"
-                      mykey={id}
-                    />
-                  );
-                })}
+              <div className="w-full flex flex-col items-start justify-end mt-8  gap-8">
+                {/* name and looking for work */}
+                <div className="text-[3rem] text-white flex flex-col leading-none">
+                  <span className="text-[2rem] opacity-40">Hello! Myself</span>
+                  <h1 className="flex flex-wrap gap-6 items-center">
+                    Abhisek Maiti
+                    {/* -gradient-to-l from-yellow-700 to-yellow-600 */}
+                    <span className="relative overflow-hidden text-[1.2rem] text-black font-bold w-fit bg-gradient-to-l from-yellow-700 to-yellow-600 px-4 py-2 rounded-md">
+                      Looking for React Dev Role
+                    </span>
+                  </h1>
+                </div>
+                {/* email phone and others  */}
+                <div className="flex justify-start gap-2 flex-wrap ">
+                  {mydetails.map((item) => {
+                    let id = nanoid();
+                    return (
+                      <Descbutton
+                        key={id}
+                        text={item.text}
+                        link="mylink"
+                        mykey={id}
+                      />
+                    );
+                  })}
+                </div>
               </div>
             </div>
 
@@ -222,27 +233,8 @@ export default function Resume() {
               </div>
               {/* {ALL DEATAILS - Institute - marks - address and images} */}
               <div className="w-full flex flex-col gap-8 text-[1.4rem] max-sm:text-[1.2rem] text-white mt-4">
-                {/* Deatails without images  */}
-                <div className="flex flex-col gap-[4rem] bg-brand-bg/50 border-black border-[1px] max-sm:p-[3rem] p-[4rem] rounded-lg">
-                  {/* institute name and address  */}
-                  <div className="flex justify-between items-center flex-wrap gap-y-[2rem] gap-x-10  leading-none">
-                    <h1 className="text-[2rem] max-sm:text-[1.5rem]">
-                      Future Institute of Engineering and Management
-                      {/* Fullstack */}
-                    </h1>
-                    <h1 className="text-white/50">Kolkata, West Bengal</h1>
-                  </div>
-                  {/* degree - marks and duration  */}
-                  <div className="flex justify-between items-center flex-wrap gap-y-[2rem] gap-x-10 leading-none text-white/50">
-                    <h1 className="flex items-center gap-[2rem] flex-wrap">
-                      Bachelor of Technology in Computer Science and Engineering{" "}
-                      <span className="bg-black/50 px-2 py-1 rounded text-white/50">
-                        GPA - 9.06
-                      </span>
-                    </h1>
-                    <h1>Aug. 2019 – July 2023</h1>
-                  </div>
-                </div>
+                {/* Education details  */}
+                <Educard />
                 {/* image showcase slider  */}
                 <Imageslide />
               </div>
