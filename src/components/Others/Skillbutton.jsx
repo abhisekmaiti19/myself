@@ -1,9 +1,9 @@
 /* eslint-disable react/prop-types */
-import css from "../../assets/skills/css.svg";
+//import css from "../../assets/skills/css.svg";
 import express from "../../assets/skills/express.svg";
 import figma from "../../assets/skills/figma.svg";
 import git from "../../assets/skills/git.svg";
-import html from "../../assets/skills/html.svg";
+//import html from "../../assets/skills/html.svg";
 import java from "../../assets/skills/java.svg";
 import javascript from "../../assets/skills/javascript.svg";
 import mongodb from "../../assets/skills/mongodb.svg";
@@ -14,6 +14,7 @@ import reactjs from "../../assets/skills/reactjs.svg";
 import redux from "../../assets/skills/redux.svg";
 import tailwind from "../../assets/skills/tailwind.svg";
 import vscode from "../../assets/skills/vscode.svg";
+import apex from "../../assets/skills/apex.png";
 
 export default function Skillbutton({ name, mykey }) {
   let list = [
@@ -24,6 +25,10 @@ export default function Skillbutton({ name, mykey }) {
     {
       name: "Java",
       img: <img src={java} alt="" key={mykey} width="30rem" />,
+    },
+    {
+      name: "Apex",
+      img: <img src={apex} alt="" key={mykey} width="30rem" />,
     },
     {
       name: "Reactjs",

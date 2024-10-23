@@ -54,3 +54,11 @@ html {
     transform: translateX(-100%);
   }
 }
+
+.srchinp {
+  outline: none;
+}
+
+.srchinp::placeholder {
+  color: rgb(128, 128, 128);
+}

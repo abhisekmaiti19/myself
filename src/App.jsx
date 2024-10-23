@@ -1,6 +1,6 @@
 import { Outlet } from "react-router";
 import VoneSidebar from "./components/Sidebar/VoneSidebar";
-// import AnimatedCursor from "react-animated-cursor";
+//import AnimatedCursor from "react-animated-cursor";
 import toogleContext from "./context/Toogle/toogleContext";
 import { useContext } from "react";
 export default function App() {
@@ -32,7 +32,7 @@ export default function App() {
         </div>
       </div>
       {/* please neglate  */}
-      {/* <div className="md:visible max-md:hidden">
+      {/* <div className="md:hidden max-md:hidden">
         <AnimatedCursor
           innerSize={8}
           outerSize={35}
