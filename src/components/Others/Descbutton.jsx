@@ -29,7 +29,7 @@ export default function Descbutton({ text, mykey }) {
     },
   ];
   return (
-    <button className="px-6 py-1 text-[1.4rem] bg-black/50 text-white/50 hover:text-white rounded-lg flex items-center gap-4 transition-all duration-200 ease-in-out">
+    <button className="px-6 py-1 text-[14px] bg-black/50 text-white/50 hover:text-white rounded-lg flex items-center gap-4 transition-all duration-200 ease-in-out">
       {icons.map((item) => {
         if (item.text === text) {
           return item.icon;

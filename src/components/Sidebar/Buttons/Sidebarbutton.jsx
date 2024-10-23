@@ -15,31 +15,31 @@ export default function Sidebarbutton({ titledata, show }) {
   let icons = [
     {
       name: "Resume",
-      icon: <FileTextIcon key={id} width="2rem" height="2rem" />,
+      icon: <FileTextIcon key={id} width="20px" height="20px" />,
     },
     {
       name: "Projects",
-      icon: <TransformIcon key={id} width="2rem" height="2rem" />,
+      icon: <TransformIcon key={id} width="20px" height="20px" />,
     },
     {
       name: "Skills",
-      icon: <LightningBoltIcon key={id} width="2rem" height="2rem" />,
+      icon: <LightningBoltIcon key={id} width="20px" height="20px" />,
     },
     {
       name: "Feedbacks",
-      icon: <HeartIcon key={id} width="2rem" height="2rem" />,
+      icon: <HeartIcon key={id} width="20px" height="20px" />,
     },
     {
       name: "Mentoring",
-      icon: <Crosshair2Icon key={id} width="2rem" height="2rem" />,
+      icon: <Crosshair2Icon key={id} width="20px" height="20px" />,
     },
     {
       name: "Freelancing",
-      icon: <MixIcon key={id} width="2rem" height="2rem" />,
+      icon: <MixIcon key={id} width="20px" height="20px" />,
     },
     {
       name: "Thinking",
-      icon: <MagicWandIcon key={id} width="2rem" height="2rem" />,
+      icon: <MagicWandIcon key={id} width="20px" height="20px" />,
     },
   ];
 
@@ -48,7 +48,7 @@ export default function Sidebarbutton({ titledata, show }) {
       key={id}
       to={titledata === `Resume` ? `` : titledata}
       className={({ isActive }) =>
-        `flex justify-start gap-2 text-[1.4rem] p-[1rem] rounded-xl max-xl:flex-col max-xl:items-center max-xl:justify-center ${
+        `flex justify-start gap-2 text-[14px] p-[10px] rounded-xl max-xl:flex-col max-xl:items-center max-xl:justify-center ${
           isActive
             ? `text-white bg-white/10 `
             : `text-white/50 hover:text-white/30`

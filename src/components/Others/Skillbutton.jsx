@@ -76,14 +76,14 @@ export default function Skillbutton({ name, mykey }) {
     },
   ];
   return (
-    <div className="min-[375px]:w-[10rem] h-[10rem] max-[285px]:w-full min-[285px]:w-[8rem] max-[375px]:h-[8rem] rounded-lg flex flex-col justify-around items-center p-6  bg-brand-bg/50 border-[1px] border-black grayscale hover:grayscale-0 transition-all duration-200 ease-in-out hover:cursor-cell">
+    <div className="min-[375px]:w-[100px] h-[100px] max-[285px]:w-full min-[285px]:w-[80px] max-[375px]:h-[80px] rounded-lg flex flex-col justify-around items-center p-6  bg-brand-bg/50 border-[1px] border-black grayscale hover:grayscale-0 transition-all duration-200 ease-in-out hover:cursor-cell">
       {list.map((it) => {
         if (it.name === name) {
           return it.img;
         }
       })}
 
-      <h1 className="text-[1.5rem] max-[375px]:text-[1.4rem] text-white/50">
+      <h1 className="text-[15px] max-[375px]:text-[14px] text-white/50">
         {name}
       </h1>
     </div>

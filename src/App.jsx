@@ -10,8 +10,8 @@ export default function App() {
     <div className="w-screen h-screen relative bg-brand-bg flex justify-center items-center md:overflow-hidden max-md:overflow-y-auto">
       {/* mentioned and controll the maximum screensize width taken  */}
       <div
-        className={`w-full max-w-[1920px] h-screen flex md:flex-row max-md:flex-col relative md:p-[5rem] max-md:px-5 max-md:overflow-y-auto md:overflow-hidden ${
-          clicked ? `gap-1` : `max-xl:gap-0 xl:gap-[2rem]`
+        className={`w-full max-w-[1920px] h-screen flex md:flex-row max-md:flex-col relative md:p-[3.125rem] max-md:px-5 max-md:overflow-y-auto md:overflow-hidden ${
+          clicked ? `gap-1` : `max-xl:gap-0 xl:gap-[1.25rem]`
         }`}
       >
         {/* have two part side navbar/topbar and the content screen */}
@@ -19,8 +19,8 @@ export default function App() {
         <div
           className={`relative md:min-h-full ${
             clicked
-              ? `md:w-[12rem]  max-md:min-h-[40%]`
-              : `xl:w-[15%] max-xl:w-[12rem] max-md:max-h-fit`
+              ? `md:w-[7.5rem]  max-md:min-h-[40%]`
+              : `xl:w-[15%] max-xl:w-[7.5rem] max-md:max-h-fit`
           } md:h-full max-md:w-full max-md:h-[10%] max-md:mt-2 overflow-y-auto customscroll transition-all duration-300 ease-in-out`}
         >
           <VoneSidebar isClicked={clicked} />

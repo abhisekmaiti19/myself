@@ -28,7 +28,7 @@ export default function Imageslide() {
             return (
               <div
                 key={id}
-                className="w-[25rem] max-sm:w-[15rem] h-[25rem] max-sm:h-[15rem] bg-slate-300 rounded-xl"
+                className="w-[250px] max-sm:w-[150px] h-[250px] max-sm:h-[150px] bg-slate-300 rounded-xl"
               ></div>
             );
           })}
@@ -39,7 +39,7 @@ export default function Imageslide() {
             return (
               <div
                 key={id}
-                className="w-[25rem] max-sm:w-[15rem] h-[25rem] max-sm:h-[15rem] bg-slate-300 rounded-xl"
+                className="w-[250px] max-sm:w-[150px] h-[250px] max-sm:h-[150px] bg-slate-300 rounded-xl"
               ></div>
             );
           })}
