@@ -30,3 +30,7 @@ xl --> 12rem
 lg --> 8rem
 sm --> 4rem
 xsm --> 2rem
+
+For the amazing UI thanks to ->
+shdcn ui and
+Aceternity UI

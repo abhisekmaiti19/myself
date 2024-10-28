@@ -36,6 +36,20 @@
   display: none;
 }
 
+/* This part changes the scrollbar track (the part behind the scrollbar) */
+
+/* This part changes the scrollbar handle */
+::-webkit-scrollbar-thumb {
+  background: #555; /* Medium grey color, this is the actual scrollbar */
+  border-radius: 50px;
+}
+
+/* You can also change the scrollbar width and height */
+::-webkit-scrollbar {
+  width: 5px; /* Width of the vertical scrollbar */
+  height: 12px; /* Height of the horizontal scrollbar */
+}
+
 .slideanime {
   animation: sliding;
   animation-iteration-count: infinite;
@@ -90,14 +104,14 @@
     --chart-4: 43 74% 66%;
     --chart-5: 27 87% 67%;
     --radius: 0.5rem;
-    --sidebar-background: 0 0% 98%;
+    /* --sidebar-background: 0 0% 98%;
     --sidebar-foreground: 240 5.3% 26.1%;
     --sidebar-primary: 240 5.9% 10%;
     --sidebar-primary-foreground: 0 0% 98%;
     --sidebar-accent: 240 4.8% 95.9%;
     --sidebar-accent-foreground: 240 5.9% 10%;
     --sidebar-border: 220 13% 91%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --sidebar-ring: 217.2 91.2% 59.8%; */
   }
   .dark {
     --background: 0 0% 3.9%;
@@ -124,14 +138,14 @@
     --chart-3: 30 80% 55%;
     --chart-4: 280 65% 60%;
     --chart-5: 340 75% 55%;
-    --sidebar-background: 240 5.9% 10%;
+    /* --sidebar-background: 240 5.9% 10%;
     --sidebar-foreground: 240 4.8% 95.9%;
     --sidebar-primary: 224.3 76.3% 48%;
     --sidebar-primary-foreground: 0 0% 100%;
     --sidebar-accent: 240 3.7% 15.9%;
     --sidebar-accent-foreground: 240 4.8% 95.9%;
     --sidebar-border: 240 3.7% 15.9%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --sidebar-ring: 217.2 91.2% 59.8%; */
   }
 }
 

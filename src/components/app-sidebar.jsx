@@ -169,7 +169,10 @@ export function AppSidebar({ ...props }) {
             <SidebarMenu>
               {data.navMain.map((item) => (
                 <SidebarMenuItem key={item.title}>
-                  <SidebarMenuButton asChild>
+                  <SidebarMenuButton
+                    asChild
+                    className="text-white/40 hover:text-white/40"
+                  >
                     <a href={item.url} className="font-medium">
                       {item.title}
                     </a>
@@ -194,7 +197,6 @@ export function AppSidebar({ ...props }) {
           </SidebarGroupContent>
         </SidebarGroup>
       </SidebarContent>
-      <SidebarRail />
       <SidebarTrigger />
     </Sidebar>
   );
