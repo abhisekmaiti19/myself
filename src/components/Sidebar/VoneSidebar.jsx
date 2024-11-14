@@ -4,6 +4,7 @@ import { useContext } from "react";
 import toogleContext from "../../context/Toogle/toogleContext";
 import Sidebarbutton from "./Buttons/Sidebarbutton";
 import { PaperPlaneIcon, ChevronRightIcon } from "@radix-ui/react-icons";
+import { ModeToggle } from "../mode-toggle";
 export default function VoneSidebar({ isClicked }) {
   const { clicked, setClicked } = useContext(toogleContext);
   let whatlist = ["Resume", "Skills", "Projects", "Feedbacks"];

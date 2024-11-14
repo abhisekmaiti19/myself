@@ -34,3 +34,7 @@ xsm --> 2rem
 For the amazing UI thanks to ->
 shdcn ui and
 Aceternity UI
+
+Things to exlpore later
+
+matchMedia()

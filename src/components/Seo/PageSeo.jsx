@@ -21,6 +21,8 @@ export default function PageSeo({ type }) {
       let ogArr = config.og;
       for (let i = 0; i < ogArr.length; i++) {
         if (ogArr[i].split("@")[0] === ogType) {
+          console.log(ogArr[i].split("@")[1]);
+
           return ogArr[i].split("@")[1];
         }
       }
@@ -37,7 +39,7 @@ export default function PageSeo({ type }) {
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
         {/* <!-- Title Tag --/> */}
-        <title>{config.title}</title>
+        <title>{config.title || "loading..."}</title>
 
         {/* <!-- Meta Description --/> */}
         <meta name="description" content={config.description} />

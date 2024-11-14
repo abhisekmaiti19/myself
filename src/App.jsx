@@ -4,10 +4,12 @@ import VoneSidebar from "./components/Sidebar/VoneSidebar";
 import toogleContext from "./context/Toogle/toogleContext";
 import { useContext } from "react";
 export default function App() {
-  const { clicked } = useContext(toogleContext);
+  const { clicked } = useContext(toogleContext); 
   return (
-    //  here i maintain screen sizes for now its 100vw and 100vh
-    <div className="w-screen h-screen relative bg-brand-bg flex justify-center items-center md:overflow-hidden max-md:overflow-y-auto">
+    //  here i maintain screen sizes for now its 100vw and 100vh [bg-brand-bg] v
+    <div className="w-screen h-screen relative bg-background flex justify-center items-center md:overflow-hidden max-md:overflow-y-auto">
+      {/* Mode toogle -- Temporary | For position adjustment check => components/mode-toggle  */}
+
       {/* mentioned and controll the maximum screensize width taken  */}
       <div
         className={`w-full max-w-[1920px] h-screen flex md:flex-row max-md:flex-col relative md:p-[3.125rem] max-md:px-5 max-md:overflow-y-auto md:overflow-hidden ${

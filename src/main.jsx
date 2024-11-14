@@ -17,6 +17,8 @@ import Home from "./pages/Home.jsx";
 import Resume from "./pages/Resume.jsx";
 import Skills from "./pages/Skills.jsx";
 import { SidebarProvider } from "./components/ui/sidebar.jsx";
+import { ThemeProvider } from "@/components/theme-provider";
+
 const routes = createBrowserRouter(
   createRoutesFromElements(
     <Route path="" element={<App />}>
@@ -33,10 +35,12 @@ const routes = createBrowserRouter(
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <ToogleContextProvider>
-      <SidebarProvider>
-        <RouterProvider router={routes} />
-      </SidebarProvider>
-    </ToogleContextProvider>
+    <ThemeProvider>
+      <ToogleContextProvider>
+        <SidebarProvider>
+          <RouterProvider router={routes} />
+        </SidebarProvider>
+      </ToogleContextProvider>
+    </ThemeProvider>
   </React.StrictMode>
 );

@@ -253,12 +253,12 @@ export default function Resume() {
             </div>
           </div>
         </div>
-        <button className="absolute bottom-8 right-16 flex items-center gap-4 rounded-xl bg-gradient-to-r from-orange-600 to-orange-900 hover:to-orange-600 px-6 py-4">
+        {/* <button className="absolute bottom-8 right-16 flex items-center gap-4 rounded-xl bg-gradient-to-r from-orange-600 to-orange-900 hover:to-orange-600 px-6 py-4">
           <div className=" animate-bounce ">
             <ArrowDownIcon width="1.25rem" height="1.25rem" />
           </div>
           <span className=" text-[14px] font-bold">Download Me</span>
-        </button>
+        </button> */}
       </div>
     </>
   );
