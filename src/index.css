@@ -82,6 +82,20 @@
 @layer base {
   :root {
     --background: 0 0% 100%;
+
+    --brand-bg: 360 0% 100%;
+    /* --brand-bg-light: 234 1.8% 93%; */
+    --brand-bg-light: 0 0% 96.1%;
+    --brand-purple: 267 96.4% 56.1%;
+    --brand-black-light: 300 0.6% 66.5%;
+    --brand-text-dark: 0 0% 3.9%;
+    --brand-text: 0 0% 0%;
+
+    /* --------Alternatvies--------- */
+    --blackwhite: 0 0% 0%;
+    --whiteblack: 0 0% 100%;
+    /* ------------------------------------------ */
+
     --foreground: 0 0% 3.9%;
     --card: 0 0% 100%;
     --card-foreground: 0 0% 3.9%;
@@ -117,10 +131,17 @@
   }
   .dark {
     --background: 0 0% 3.9%;
+    /* --------Alternatvies--------- */
+    --blackwhite: 0 0% 100%;
+    --whiteblack: 0 0% 0%;
     /* ---- my variables ------ */
-    --brand-bg:0 0% 5.9%;
+    --brand-bg: 0 0% 5.9%;
     --brand-bg-light: 300 5.3% 11.2%;
-    
+    --brand-purple: 267 96.4% 56.1%;
+    --brand-black-light: 300 0.6% 66.5%;
+    --brand-text-dark: 225 1.8% 43.5%;
+    --brand-text: 0 0% 100%;
+
     /* ------------------------- */
     --foreground: 0 0% 98%;
     --card: 0 0% 3.9%;

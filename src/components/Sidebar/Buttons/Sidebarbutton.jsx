@@ -50,8 +50,8 @@ export default function Sidebarbutton({ titledata, show }) {
       className={({ isActive }) =>
         `flex justify-start gap-2 text-[14px] p-[10px] rounded-xl max-xl:flex-col max-xl:items-center max-xl:justify-center ${
           isActive
-            ? `text-white bg-white/10 `
-            : `text-white/50 hover:text-white/30`
+            ? `text-brand-text bg-white/10 `
+            : `text-brand-text/50 hover:text-brand-text/30`
         } ${
           show ? `flex-col items-center justify-center` : ``
         }whitespace-nowrap`

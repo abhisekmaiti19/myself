@@ -115,14 +115,14 @@ export default function Resume() {
                 </div>
                 <div className="w-full flex flex-col items-start justify-end mt-8  gap-8">
                   {/* name and looking for work */}
-                  <div className="text-[1.875rem] text-white flex flex-col leading-none">
+                  <div className="text-[1.875rem] text-brand-text flex flex-col leading-none">
                     <span className="text-[1.25rem] opacity-40">
                       Hello! Myself
                     </span>
                     <h1 className="flex flex-wrap gap-6 items-center">
                       Abhisek Maiti
                       {/* -gradient-to-l from-yellow-700 to-yellow-600 */}
-                      <span className="relative overflow-hidden text-[0.75rem] text-black font-bold w-fit bg-gradient-to-l from-yellow-700 to-yellow-600 px-4 py-2 rounded-md">
+                      <span className="relative overflow-hidden text-[0.75rem] text-whiteblack font-bold w-fit bg-gradient-to-l from-yellow-700 to-yellow-600 px-4 py-2 rounded-md">
                         Looking for React Dev Role
                       </span>
                     </h1>
@@ -147,8 +147,8 @@ export default function Resume() {
               {/* Experience  */}
               <div className="w-full flex flex-col gap-[1.25rem]">
                 {/* Title  */}
-                <div className="w-full flex items-center flex-wrap gap-[1.25rem] text-[15px] font-semibold text-white/50 border-b-[0.5px] border-white/20 pb-2">
-                  <div className="flex items-center gap-3 text-[15px] font-semibold text-white/50">
+                <div className="w-full flex items-center flex-wrap gap-[1.25rem] text-[15px] font-semibold text-brand-text/50 border-b-[0.5px] border-white/20 pb-2">
+                  <div className="flex items-center gap-3 text-[15px] font-semibold text-brand-text/50">
                     <CodeOutlined className="text-[1.25rem]" />
                     <h1>Experience</h1>
                   </div>
@@ -173,8 +173,8 @@ export default function Resume() {
               {/* Projects  */}
               <div className="w-full flex flex-col gap-[1.25rem]">
                 {/* Title  */}
-                <div className="w-full flex items-center flex-wrap gap-[1.25rem] text-[15px] font-semibold text-white/50 border-b-[0.5px] border-white/20 pb-2">
-                  <div className="flex items-center gap-3 text-[15px] font-semibold text-white/50">
+                <div className="w-full flex items-center flex-wrap gap-[1.25rem] text-[15px] font-semibold text-brand-text/50 border-b-[0.5px] border-white/20 pb-2">
+                  <div className="flex items-center gap-3 text-[15px] font-semibold text-brand-text/50">
                     <TransformIcon width="1.25rem" height="1.25rem" />
                     <h1>Projects</h1>
                   </div>
@@ -198,8 +198,8 @@ export default function Resume() {
               {/* skills  */}
               <div className="w-full flex flex-col gap-[1.25rem]">
                 {/* Title  */}
-                <div className="w-full flex items-center flex-wrap gap-[1.25rem] text-[15px] font-semibold text-white/50 border-b-[0.5px] border-white/20 pb-2">
-                  <div className="flex items-center gap-3 text-[15px] font-semibold text-white/50">
+                <div className="w-full flex items-center flex-wrap gap-[1.25rem] text-[15px] font-semibold text-brand-text/50 border-b-[0.5px] border-white/20 pb-2">
+                  <div className="flex items-center gap-3 text-[15px] font-semibold text-brand-text/50">
                     <LightningBoltIcon width="2rem" height="2rem" />
 
                     <h1>Skills</h1>
@@ -213,7 +213,7 @@ export default function Resume() {
                         className="w-fit flex flex-col gap-[1.25rem]"
                         key={id}
                       >
-                        <h1 className="text-[15px] text-white">
+                        <h1 className="text-[15px] text-brand-text">
                           {items.category}
                         </h1>
                         <div className="w-fit flex max-sm:flex-wrap gap-[1.25rem]">
@@ -232,8 +232,8 @@ export default function Resume() {
               {/* Education */}
               <div className="w-full flex flex-col gap-[1.25rem] ">
                 {/* Title and buttons  */}
-                <div className="w-full flex items-center flex-wrap gap-[1.25rem] text-[0.9375rem] font-semibold text-white/50 border-b-[0.5px] border-white/20 pb-2">
-                  <div className="flex items-center gap-3 text-[15px] font-semibold text-white/50">
+                <div className="w-full flex items-center flex-wrap gap-[1.25rem] text-[0.9375rem] font-semibold text-brand-text/50 border-b-[0.5px] border-white/20 pb-2">
+                  <div className="flex items-center gap-3 text-[15px] font-semibold text-brand-text/50">
                     <CompassOutlined className="text-[1.25rem]" />
                     <h1>Education</h1>
                   </div>
@@ -243,7 +243,7 @@ export default function Resume() {
                   </div>
                 </div>
                 {/* {ALL DEATAILS - Institute - marks - address and images} */}
-                <div className="w-full flex flex-col gap-8 text-[14px] max-sm:text-[12px] text-white mt-4">
+                <div className="w-full flex flex-col gap-8 text-[14px] max-sm:text-[12px] text-brand-text mt-4">
                   {/* Education details  */}
                   <Educard />
                   {/* image showcase slider  */}

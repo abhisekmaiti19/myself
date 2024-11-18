@@ -1,5 +1,6 @@
 /* eslint-disable react/prop-types */
 //import css from "../../assets/skills/css.svg";
+import { useEffect, useState } from "react";
 import express from "../../assets/skills/express.svg";
 import figma from "../../assets/skills/figma.svg";
 import git from "../../assets/skills/git.svg";
@@ -75,15 +76,29 @@ export default function Skillbutton({ name, mykey }) {
       img: <img src={figma} alt="" key={mykey} width="30rem" />,
     },
   ];
+
+  const [currentTheme, setCurrentTheme] = useState(null);
+
+  useEffect(() => {
+    let themeValue = localStorage.getItem("vite-ui-theme");
+    setCurrentTheme(themeValue);
+  }, []);
+
   return (
-    <div className="min-[375px]:w-[100px] h-[100px] max-[285px]:w-full min-[285px]:w-[80px] max-[375px]:h-[80px] rounded-lg flex flex-col justify-around items-center p-6  bg-brand-bg/50 border-[1px] border-black grayscale hover:grayscale-0 transition-all duration-200 ease-in-out hover:cursor-cell">
+    <div
+      className={`min-[375px]:w-[100px] h-[100px] max-[285px]:w-full min-[285px]:w-[80px] max-[375px]:h-[80px] rounded-lg flex flex-col justify-around items-center p-6  bg-brand-bg/50 border-[1px] border-black ${
+        currentTheme === "light"
+          ? "filter grayscale hover:grayscale-0"
+          : "filter grayscale hover:grayscale-0"
+      } transition-all duration-200 ease-in-out hover:cursor-cell`}
+    >
       {list.map((it) => {
         if (it.name === name) {
           return it.img;
         }
       })}
 
-      <h1 className="text-[15px] max-[375px]:text-[14px] text-white/50">
+      <h1 className="text-[15px] max-[375px]:text-[14px] text-brand-text/50">
         {name}
       </h1>
     </div>

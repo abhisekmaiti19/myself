@@ -15,13 +15,15 @@ export default function Projectcard({ name, img, desc }) {
       >
         <img src={img} className="scale-110 rounded-xl" alt="" />
         <div className="absolute w-full h-full top-0 left-0 bg-brand-bg/50"></div>
-        <div className="w-full h-full bg-gradient-to-t from-brand-bg to-transparent absolute bottom-0 left-0 px-[20px] flex items-end text-white text-[30px]">
+        <div className="w-full h-full bg-gradient-to-t from-brand-bg to-transparent absolute bottom-0 left-0 px-[20px] flex items-end text-brand-text text-[30px]">
           <h1>{name}</h1>
         </div>
       </div>
       {/* projects details  */}
-      <div className="w-full h-1/2 flex flex-col max-sm:gap-[20px] justify-between text-[20px] text-white px-[20px] pb-[20px]">
-        <p className=" max-sm:text-[14px] text-[14px] text-white/50">{desc}</p>
+      <div className="w-full h-1/2 flex flex-col max-sm:gap-[20px] justify-between text-[20px] text-brand-text px-[20px] pb-[20px]">
+        <p className=" max-sm:text-[14px] text-[14px] text-brand-text/50">
+          {desc}
+        </p>
         <div className="w-full flex max-sm:flex-col sm:flex-row gap-2">
           <button className=" text-[15px] text-black px-[20px] py-2 rounded-lg bg-white/50 hover:bg-white transition-all duration-200 ease-in font-bold">
             Details

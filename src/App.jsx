@@ -1,15 +1,24 @@
 import { Outlet } from "react-router";
+import { useEffect, useState } from "react";
 import VoneSidebar from "./components/Sidebar/VoneSidebar";
 //import AnimatedCursor from "react-animated-cursor";
 import toogleContext from "./context/Toogle/toogleContext";
 import { useContext } from "react";
+import { ModeToggle } from "./components/mode-toggle";
 export default function App() {
-  const { clicked } = useContext(toogleContext); 
+  const [currentTheme, setCurrentTheme] = useState(null);
+
+  useEffect(() => {
+    let themeValue = localStorage.getItem("vite-ui-theme");
+    setCurrentTheme(themeValue);
+  }, []);
+
+  const { clicked } = useContext(toogleContext);
   return (
     //  here i maintain screen sizes for now its 100vw and 100vh [bg-brand-bg] v
     <div className="w-screen h-screen relative bg-background flex justify-center items-center md:overflow-hidden max-md:overflow-y-auto">
       {/* Mode toogle -- Temporary | For position adjustment check => components/mode-toggle  */}
-
+      {/* <ModeToggle  /> */}
       {/* mentioned and controll the maximum screensize width taken  */}
       <div
         className={`w-full max-w-[1920px] h-screen flex md:flex-row max-md:flex-col relative md:p-[3.125rem] max-md:px-5 max-md:overflow-y-auto md:overflow-hidden ${
@@ -29,7 +38,13 @@ export default function App() {
           {/* //toogle button */}
         </div>
         {/* holding oulet with nice curve  */}
-        <div className="relative w-full h-full rounded-3xl bg-brand-bg-light overflow-hidden">
+        <div
+          className={`relative w-full h-full rounded-3xl bg-brand-bg-light overflow-hidden ${
+            currentTheme === "light"
+              ? "shadow-md border border-neutral-600/20"
+              : ""
+          }`}
+        >
           <Outlet />
         </div>
       </div>

@@ -7,13 +7,15 @@ export default function Educard() {
           Future Institute of Engineering and Management
           {/* Fullstack */}
         </h1>
-        <h1 className="text-white/50">Kolkata, West Bengal</h1>
+        <h1 className="text-brand-text/50">Kolkata, West Bengal</h1>
       </div>
       {/* degree - marks and duration  */}
-      <div className="flex justify-between items-center flex-wrap gap-y-[20px] gap-x-10 leading-none text-white/50">
+      <div className="flex justify-between items-center flex-wrap gap-y-[20px] gap-x-10 leading-none text-brand-text/50">
         <h1 className="flex items-center gap-[20px] flex-wrap">
           Bachelor of Technology in Computer Science and Engineering{" "}
-          <span className="bg-black/50 px-2 py-1 rounded text-white/50">
+          <span
+            className={`bg-whiteblack/50 px-2 py-1 rounded text-brand-text/50`}
+          >
             GPA - 9.06
           </span>
         </h1>
